@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}OpenSpace Viewer
+${licensePrefix}Author: sumandeep.banerjee@gmail.com
+<#if licenseLast??>
+${licenseLast}
+</#if>

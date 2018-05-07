@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+<g id="Layer_1">
+	<g id="Layer_2_1_">
+		<path opacity="0.5" enable-background="new    " d="M129.6,0C58-0.6-0.1,57.5,0.5,129.1C1.1,197.5,59,255.4,127.4,256
+			c71.6,0.6,129.7-57.5,129.1-129.1C255.9,58.5,198,0.6,129.6,0z M49.5,57H102v22.5H72.5v29h-23V57z M101.8,200.4H49.3v-51.7h22.6
+			v28.7H102L101.8,200.4z M211.1,200H159v-22.3h28.7v-29H211V200H211.1z M211.1,108.5h-23.2v-29h-28.8V57h52V108.5z"/>
+	</g>
+</g>
+<g id="Layer_2" opacity="0.5">
+	<polygon fill="#FFFFFF" points="49.5,108.5 72.5,108.5 72.5,79.5 102,79.5 102,57 49.5,57 	"/>
+	<polygon fill="#FFFFFF" points="159.1,57 211.1,57 211.1,108.5 187.9,108.5 187.9,79.5 159.1,79.5 	"/>
+	<polygon fill="#FFFFFF" points="159,177.7 159,200 211,200 211,148.7 187.7,148.7 187.7,177.7 	"/>
+	<polygon fill="#FFFFFF" points="102,177.4 101.8,200.4 49.3,200.4 49.3,148.7 71.9,148.7 71.9,177.4 	"/>
+</g>
+</svg>

@@ -1,0 +1,441 @@
+/*
+    Copyright (C) 2015-2018 Sumandeep Banerjee
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* 
+ * OpenSpace Viewer: Style specifications
+ * Author: sumandeep.banerjee@gmail.com
+ */
+
+@CHARSET "UTF-8";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    overflow: hidden; /*  Disable scrollbars */
+    display: block;  /* No floating content on sides */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family:  Arial;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+a:hover, a:active {
+    color: white;
+    background: rgba(0,0,0,0.4);
+}
+
+#spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 5em;
+    height: 5em;
+    z-index: 9;
+    background: url(./assets/texture/load_anim.gif) 50% 50% no-repeat;
+}
+
+#container {
+}
+
+#main-canvas {
+    border:none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: move;
+    z-index: 0;
+}
+
+#title { 
+    position: absolute;
+    text-align: left;
+    top: 5px;
+    background-color: rgba(64,64,64,0.15);
+    color: rgba(255,255,255,0.75);
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+#prompt {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 5px;
+    color: rgb(200,150,0);
+}
+
+#logo {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    cursor: pointer;
+    opacity: 1.0;
+    z-index: 5;
+}
+
+#prompt-box  {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: 30%;
+    height: 20%;
+    min-width: 300px;
+    min-height: 200px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 2em;
+    color: white;
+    font-family: Arial;
+    z-index: 6;
+}
+
+#prompt-title {
+    background-color: rgba(0,0,0,0.15);
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
+    line-height: 200%;
+}
+
+#prompt-close {
+}
+
+#prompt-close > img {
+    position:absolute;
+    top: 23px;
+    right: 15px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+#fullScreen-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+#info-button {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+#splashMessage-box  {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: 30%;
+    height: 30%;
+    min-width: 300px;
+    min-height: 300px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    border-radius: 2em;
+    z-index: 6;
+}
+
+.ui-effects-transfer {
+    border: 2px solid black;
+}
+
+#splashMessage-title {
+    background-color: rgba(0,0,0,0.15);
+    color: white;
+    font-family: Arial;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
+    line-height: 200%;
+}
+
+#splashMessage-box > table, tr, td {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#splash-close{
+}
+
+#splash-close > img{
+    position:absolute;
+    top: 23px;
+    right: 15px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+table figure {
+    margin: 0px;
+}
+
+table figcaption {
+    color: white;
+    font-family: Arial;
+    font-size: 95%;
+}
+
+table img{
+    top: 0%;
+    left: 0%;
+    bottom:0%;
+    right:0%;
+    max-width: 40%;
+    max-height: 40%;
+    min-width: 64px;
+    min-height: 64px;
+}
+
+#left-pane{
+    position: absolute;
+    display:inline;
+    top: 0%;
+    left: 0%;
+    bottom: 60px;
+    width: 15%;
+    min-width: 160px;
+    max-width: 240px;
+    margin: 0%;
+    padding: 0%;
+    z-index: 2;
+}
+
+#left-bar{
+    position: absolute;
+    background-color: rgba(0,0,0,0.15);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    margin: 0%;
+    padding: 0%;
+    text-align: left;
+    overflow: hidden; 
+}
+
+#left-img{
+    position: absolute;
+    padding:0%; 
+    margin: 0%;
+    top: 50%;
+    right: 0%;
+    z-index: 3;
+    width: 16px;
+    margin-top: -128px;
+    cursor: pointer;
+}
+
+#bottom-pane{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+}
+
+#bottom-bar{
+    position: absolute;
+    background-color: rgba(0,0,0,0.15);
+    top: 0px;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index:1;
+    display: inline;
+}
+
+#tab-holder{
+    position:absolute;
+    top: 0%;
+    left: 174px;
+    right: 26px;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0% 0% 0% 0%;
+    text-align: center;
+    z-index: 2;
+}
+
+.tab{
+    position: absolute;
+    top: 0%;
+    padding:0%; 
+    margin: 0%;
+    /* if this is changed, then value inside main.js should also change */
+    width: 12%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.35);
+    z-index: 3;
+    text-align: center;
+    opacity: 0.5;
+    box-shadow: 1px 1px;
+    cursor: pointer;
+}
+
+.tab.active{
+    opacity: 1;
+}
+
+#left-scroll{
+    position: absolute;
+    padding:0%; 
+    margin: 0%;
+    left: 153px;
+    top: 0%;
+    height: 100%;
+    width: 16px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#right-scroll{
+    position: absolute;
+    padding:0%; 
+    margin: 0%;
+    right: 5px;
+    top: 0%;
+    height: 100%;
+    width: 16px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.tabtext{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font: bold Arial;
+    color: white;
+    text-shadow: 1px 1px #000000;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+#primary-box{
+    position:absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    padding: 0%;
+    margin: 0%;
+    height: 45%;
+    opacity: 0.5;
+}
+
+#primary-box:hover {
+    opacity: 1;
+}
+
+#primary-title{
+    font: bold 110% Arial;
+}
+
+#primary-content{
+    left: 0%;
+}
+
+#primary-content > div {
+    width: 100%;
+    height:25%;
+}
+
+#secondary-box{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    padding: 0%;
+    height: 35%;
+    opacity: 0.5;
+}
+
+#secondary-box:hover {
+    opacity: 1;
+}
+
+.title{
+    position:absolute;
+    left: 0%;
+    top:  0%;
+    color: white;
+    width: 100%;
+    text-shadow: 1px 1px #000000;
+}
+
+.content{
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    width: 100%;
+    height: 80%;
+    color: white;
+    margin: 4% -300% 0% 0%;
+    padding-right: 300%;
+    overflow: auto;
+    text-shadow: 1px 1px #000000;
+    font: normal  80% Arial;
+    line-height: 100%;
+}
+
+#secondary-title{
+    font: bold 100% Arial;
+}
+
+#secondary-content{
+    left: 0%;
+}
+
+#secondary-content > div {
+    width: 100%;
+    height:25%;
+}
+
+.leftDesc{
+    font-size: 100%;
+    display: block;
+    margin: 1vw 0 1vw 0;
+}

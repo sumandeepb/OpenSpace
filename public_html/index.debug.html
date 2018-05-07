@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+    Copyright (C) 2015-2018 Sumandeep Banerjee
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!--
+    OpenSpace Viewer: Main HTML5 source
+    Author: sumandeep.banerjee@gmail.com
+-->
+<html>
+    <head>
+        <title>OpenSpace Viewer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+        <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.css" />
+        <link rel="stylesheet" href="openspace.css" />
+    </head>
+    <body>
+        <script type="text/javascript" src="./libs/jquery/jquery-1.11.2.js"></script>
+        <script type="text/javascript" src="./libs/jquery-ui/jquery-ui.js"></script>
+        <script type="text/javascript" src="./libs/dat.gui/dat.gui.js"></script>
+        <script type="text/javascript" src="./libs/requestAnimationFrame/RequestAnimationFrame.js"></script>
+        <script type="text/javascript" src="./libs/hammer.js/hammer.js"></script>
+        <!--script type="text/javascript" src="./libs/gl-matrix/gl-matrix.js"></script-->
+        <script type="text/javascript" src="./libs/three.js/three.js"></script>
+        <!--script type="text/javascript" src="./libs/three.js/loaders/MTLLoader.js"></script-->
+        <script type="text/javascript" src="./libs/three.js/loaders/OBJLoader.js"></script>
+        <!--script type="text/javascript" src="./libs/three.js/loaders/BinaryLoader.js"></script-->
+        <script type="text/javascript" src="./libs/tween.js/tween.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="metadata.js"></script>
+        <script type="text/javascript" src="renderer.js"></script>
+        <script type="text/javascript" src="utility.js"></script>
+        <script type="text/javascript" src="camera.js"></script>
+        <script type="text/javascript" src="panowalk.js"></script>
+        <script type="text/javascript" src="panoverse.js"></script>
+        <script type="text/javascript" src="panogalaxy.js"></script>
+        <script type="text/javascript" src="panosphere.js"></script>
+
+        <div id="container">
+            <div id="left-pane">
+                <div id="left-bar">
+                    <div id="primary-box">
+                        <div id="primary-title" class="title"></div>
+                        <div id="primary-content" class="content">
+                        </div>
+                    </div>
+                    <div id="secondary-box">
+                        <div id="secondary-title" class="title"></div>
+                        <div id="secondary-content" class="content"></div>
+                    </div>
+                </div>
+                <img id="left-img" src="" alt="arrow"/></div>
+            <div id="bottom-pane">
+                <!--img id="upArrow" src="./assets/texture/up.png"/-->
+                <img id="left-scroll" src="" alt="scrollerLeft">
+                <img id="right-scroll" src="" alt="scrollerRight">
+                <div id="bottom-bar"></div>
+                <div id="tab-holder"></div>
+            </div>
+            <div id="spinner"></div>
+            <canvas id="main-canvas"></canvas>
+            <div id="title"></div>
+            <div id="prompt"></div>
+            <div id="logo" title="About"></div>
+            <div id="prompt-box" title=""></div>
+            <div id="fullScreen-button" title="View Fullscreen"></div>
+            <div id="info-button" title="Help"></div>
+            <div id="splashMessage-box" title=""></div>
+        </div>
+    </body>
+</html>
