@@ -192,9 +192,12 @@ function initLogo() {
 
 var g_strPromptMessage = "<div id='prompt-close'><img src='./assets/texture/close_round.svg' /></div>"
         + "<div id='prompt-title'>About</div>"
-        + "<table style='margin-left: 20px; margin-top: 20px; margin-right: 20px;'>"
-        + "<td style='width: 64px;'><figure><img src= './assets/texture/logo.svg' /></figure></td>"
-        + "<td style='padding-left: 10px; text-align: left;'>OpenSpace Viewer<br>";
+        + "<div style='width: 100%; overflow: hidden;'>"
+        + "<div style='margin-left: 20px; width: 64px; float: left; margin-top: 20px; margin-right: 20px;'>"
+        + "<img class='img' src= './assets/texture/logo.svg' /></div>"
+        + "<div style='margin-left: 20px; margin-top: 20px; margin-right: 20px; vertical-align: middle;'>"
+        + "OpenSpace Viewer<br>"
+        + "</div></div>";
 
 function initPromptMessage() {
     $("#prompt-box").css('display', 'none');
